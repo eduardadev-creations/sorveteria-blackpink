@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça seu pedido</title>
+</head>
+<body>
+    <!--Cabecalho-->
+    <form class="formulario">
+        <h2 id="cabecalho">Dados Pessoais</h2>
+        <p class="paragrafo">preencha seus dados abaixo</p><br><br>
+        <link rel="stylesheet" href="../css/formulario.css">
+
+    <!--Informações pessoais-->
+        <div class="form-container">
+    
+            <div class="campo">
+                <label for="nome">Como quer ser chamado:</label>
+                    <input type="text" id="nome" placeholder="fulaninha">
+            </div>
+        </div>
+
+    <!--Contato-->
+            <div class="campo">
+                <label for="telefone">Digite seu telefone:</label><input type="text," id="telefone"
+                 placeholder="(99) 99999-9999" name="telefone" required><br>
+
+            <div class="campo">
+                <label for="endereco">Digite sua rua:</label><input type="text," id="rua" 
+                placeholder="Rua José Pinto 67" name="rua" required><br>
+
+                <br><label for="endereco">Digite seu bairro:</label><input type="text," 
+                id="bairro" placeholder="Pajubala" name="bairro" required><br>
+
+                <br><label for="endereco">Digite seu cep:</label><input type="number," 
+                id="cep" placeholder="00000-000" name="cep" required><br>
+
+                <br>Digite sua cidade:<br><input list="cidades" id="cidade" name="cidade" required>
+                <datalist id="cidades">
+                    <option value="Maracanau">
+                    <option value="Coreia do sol">
+                    <option value="Aldeota">
+                    <option value="Fortaleza">
+                </datalist>
+            </div>
+
+        </div><br>
+
+    <!--Pedido-->
+        <br><br><h2 class="escolha">Faça seu pedido</h2><br><br>
+        <div>
+            <span class="lista" aria-required="">Escolha um ou mais sabores:</span><br>
+            <label><input type="checkbox" name="sabores" value="Oreo">Oreo</label><br>
+            <label><input type="checkbox" name="sabores" value="Morango">Morango</label><br>
+            <label><input type="checkbox" name="sabores" value="Uva">Uva</label><br>
+            <label><input type="checkbox" name="sabores" value="Baunilha-cereja">Baunilha com cereja</label><br>
+            <label><input type="checkbox" name="sabores" value="Baunilha-tradicional">Baunilha</label><br>
+            <label><input type="checkbox" name="sabores" value="Chocolate">Chocolate</label><br>
+            <label><input type="checkbox" name="sabores" value="Manga">Manga</label><br>
+            <label><input type="checkbox" name="sabores" value="Acai">Açaí</label><br> 
+        </div>
+
+        <div>
+            <label for="quantidade">Escolha a quantidade:</label><input type="number"
+             id="quantidade" name="quantidade" required><br>
+
+        </div>
+
+        <div class="tamanho">
+            <br><span class="lista">Escolha o tamanho:</span><br><input list="tamanhos" id="tamanho" name="tamanho"><br>
+            <datalist id="tamanhos">
+                <option value="Extra grande">
+                <option value="Grande">
+                <option value="Médio">
+                <option value="Pequeno">
+            </datalist>
+        </div>
+
+    <!--Botões-->
+    <a href="pedido-finalizado.html">
+        <br><button type="submit"class="btn-finalizar">Avançar →</button>
+    </a>
+    <a href="index.html">
+        <button type="button" class="btn-voltar" onclick="history.back()">← Voltar</button>
+    </a>
+        <!--detalhe:quando o pedido for feito, apresentar a frase "take it, pedido feito">tarefa pro js-->
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,103 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    
+  background-image: url(../img/fundo_form.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+  
+  .formulario{
+    width: 400px;
+    padding: 30px;
+    border-radius: 12px;
+    margin: auto;
+    margin-top: 40px;
+    box-shadow: 0 0 15px rgba(255,20,147,0.4);
+    justify-content: center;
+    background-color: rgba(0,0,0,0.7);
+  }
+  
+  #cabecalho{
+    color: #f57591;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 40px;
+    font: 'Baloo', sans-serif;
+  }
+  .paragrafo{
+    color:#f4a6b7;
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  .formulario label{
+    color: #f4a6b7;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .campo{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 6px;
+    color: #f4a6b7;
+    font:'Quicksand', sans-serif ;
+    justify-content: center;
+  }
+  
+  .quantidade{
+    outline: none;
+    color:#f4a6b7;
+  }
+
+  .escolha{
+    color: #f57591;
+    font-size: 35px;
+    text-align: center;
+  }
+  .lista{
+    color:#f4a6b7;
+  }
+  .btn-finalizar{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: black;
+    border: none;
+    border-radius: none;
+    color: #f4a6b7;
+    font-weight: bold;
+    cursor: pointer;
+
+  }
+  
+  .btn-finalizar:hover{
+    background-color: #f4a6b7;
+    color:black;
+    transition: 0.5s;
+  }
+
+.btn-voltar{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: black;
+    border: none;
+    border-radius: none;
+    color: #f4a6b7;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-voltar:hover{
+  background-color: #f4a6b7;
+  color:black;
+  transition: 0.5s;
+}
